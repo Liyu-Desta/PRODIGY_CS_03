@@ -19,7 +19,7 @@ Clone the repository:
 
 sh
 Copy code
-git clone https://github.com/your-username/password-complexity-checker.git
+git clone https://github.com/Liyu-Desta/PRODIGY_CS_03.git
 Navigate to the project directory:
 
 sh
