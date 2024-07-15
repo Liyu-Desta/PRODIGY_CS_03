@@ -17,20 +17,18 @@ Ensure you have Python installed on your system. You can download Python from py
 Installation
 Clone the repository:
 
-sh
+
 Copy code
 git clone https://github.com/Liyu-Desta/PRODIGY_CS_03.git
 Navigate to the project directory:
 
-sh
-Copy code
-cd password-complexity-checker
-Usage
-Run the PasswordComplexityChecker.py script to check the complexity of a password:
 
-sh
-Copy code
-python PasswordComplexityChecker.py
+Open the folder that has the cloned git in Visual Studio(VS) code
+Usage: In the terminal make sure that you are in the folder which contains PasswordComplexityChecker.py file then,
+Run the "python PasswordComplexityChecker.py" script to check the complexity of a password:
+
+
+
 The script will prompt you to enter a password and will provide feedback based on the following criteria:
 
 At least one uppercase letter
@@ -39,34 +37,13 @@ At least one number
 At least one special character
 A minimum length of 8 characters
 Example
-sh
-Copy code
+
+
 Create a password please: HelloWorld123!
 Your password is strong
 Code Explanation
-The script uses the re module in Python to perform regular expression searches and ensure that the password meets all the required complexity criteria. Here's a brief overview of the code:
+The script uses the re module in Python to perform regular expression searches and ensure that the password meets all the required complexity criteria. 
 
-python
-Copy code
-import re
-
-def Password_Complexity(password):
-    if len(password) < 8:
-        return 'The password must be at least 8 characters long'
-    elif not re.search("[A-Z]", password):
-        return "Password must contain at least one uppercase letter"
-    elif not re.search("[a-z]", password):
-        return "Password must contain at least one lowercase letter"
-    elif not re.search("[0-9]", password):
-        return "Password must contain at least one number"
-    elif not re.search("[!@#$%^&*()_+={}\[\]:;\"'<>,.?/~`|-]", password):
-        return "Password must contain at least one special character"
-    else:
-        return "Your password is strong"
-
-if __name__ == "__main__":
-    password = input("Create a password please: ")
-    print(Password_Complexity(password))
 Lessons Learned 📚
 From this project, I've gained valuable insights into using the re package in Python for regular expressions. I've also learned about the importance of ensuring password security by using a variety of character types to make passwords more robust against attacks.
 
